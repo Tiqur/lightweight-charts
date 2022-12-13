@@ -729,7 +729,7 @@ export class TimeScale {
 			return this._localizationOptions.timeFormatter(time.businessDay || time.timestamp);
 		}
 
-		return this._dateTimeFormatter.format(new Date(time.timestamp * 1000));
+		return this._dateTimeFormatter.format(new Date(time.timestamp * 1000)) + " - " + time.timestamp.toString();
 	}
 
 	private _isAllScalingAndScrollingDisabled(): boolean {

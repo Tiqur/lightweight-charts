@@ -51,6 +51,6 @@ export function defaultTickMarkFormatter(timePoint: TimePoint, tickMarkType: Tic
 		date.getUTCSeconds(),
 		date.getUTCMilliseconds()
 	);
-
+  
 	return localDateFromUtc.toLocaleString(locale, formatOptions);
 }
